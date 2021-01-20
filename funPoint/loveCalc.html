@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Love Calc</title>
+<style>
+          .outerDiv{
+                 height : 250px;
+                 width : 650px;
+                 background-color : white;
+                 align-items:center;
+                 position: absolute;
+                 top:50%;
+                 left : 50%;
+                 transform:translate(-50%,-50%); 
+          }
+          body{
+                 background-image:url('heart.jpg');
+                 background-repeat:no-repeat;
+                 background-size:100% 100%;
+          }
+          .innerDiv{
+                 height : 32px;
+                 width : 650px;
+                 background-color : red;
+                 text-align:center;
+                 font-size:25px;
+                 font-family:serif;
+                 color:white; 
+          }
+          input{
+                 height:40px;
+                 border-radius:10px;
+                 padding:20px;
+                 
+          }
+          button{
+                 width:285px;
+                 height:40px;
+                 padding:10px 0;
+                 border-radius:10px;
+                 font-size:15px;
+                 color:white; 
+                 align:center ;
+                 background:green;
+                 margin-left:180px; 
+          }
+          .bottomDiv{
+                 height : 32px;
+                 width : 650px;
+                 background-color : lightgrey;
+                 text-align:center;
+                 font-size:25px;
+                 font-family:serif;
+                 color:white; 
+          }
+          #lovper{
+                 margin-left:230px;
+                 align:center; 
+          }
+          
+</style>
+</head>
+
+<body>
+<div class="outerDiv">
+<div class="innerDiv">Love Calculator</div>
+<form>
+<table align="center">
+        <tr>
+          
+              <td><input type="text" placeholder="Your Name.."></td>
+              <td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></td>  
+              <td><input type="text" placeholder="Your Name.."></td>
+          
+        </tr>
+</table>
+<br>
+<button align="center" onclick="checkLovePer()">Click Me</button>
+<br><br>
+   <input type="text" id="lovper" placeholder="LOVE PERCENTAGE" ></input>
+
+</form>
+<br>
+<div class="bottomDiv">
+God Bless Yor Relationship
+</div>
+</div>
+
+
+<script>
+     function checkLovePer(){
+          var lovData = Math.random()*100;
+          lovData = Math.floor(lovData);
+          document.getElementById('lovper').value=lovData; 
+          
+     }
+  
+     function holdScreen(){
+          var i,j;
+          for(i=0;i<=1000;i++){
+                for(j=0;j<=100000000;j++){
+
+                 } 
+          } 
+     }
+</script>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+</body>
+</html>
