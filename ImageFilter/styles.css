@@ -1,0 +1,17 @@
+body{
+  margin : 20px;
+  background-color : black;
+}
+h1{
+  font-family : cursive;
+  color : maroon;
+}
+canvas{
+  width : 430px;
+  height : 470px;
+  border : 1px solid grey;
+}
+p{
+  font-size : 20px;
+  font-weight : bold;
+}
