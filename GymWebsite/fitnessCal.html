@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gym Palace&nbsp;|&nbsp;Fitnesss Calculator</title>
+    <style media="screen">
+      body{
+        background: url("img/couple.jpg");
+        repeat: no-repeat;
+        background-size: cover;
+      }
+      .container{
+        height: 430px;
+        width: 789px;
+        margin: auto;
+        border: 2px solid skyblue;
+        margin-top: 154px;
+        box-shadow: 1px 4px 13px 10px;
+      }
+      .heading{
+        height: 40px;
+        width: 100%;
+        border: 4px solid black;
+        font-size: 28px;
+        font-family: fantasy;
+        background: skyblue;
+        color: #0c0c0c;
+        text-align: center;
+      }
+      .mainContent{
+        width: 50%;
+        margin: auto;
+        margin-top: 28px;
+        height: 252px;
+        margin-left: 242px;
+      }
+      input{
+        display: inline-block;
+        margin-top: 5px;
+        height: 28px;
+        width: 291px;
+        border: 2px solid skyblue;
+        border-radius: 13px;
+        padding: 5px;
+        font-size: 21px;
+        font-weight: bold;
+      }
+      label{
+        font-size: 25px;
+        font-family: cursive;
+        font-weight: 600;
+        color: lightgoldenrodyellow;;
+      }
+      input[type="submit"]{
+        height: 49px;
+        font-size: 25px;
+        font-family: fantasy;
+        width: 303px;
+        margin-top: 18px;
+        background: skyblue;
+        cursor: pointer;
+      }
+      .footer{
+        height: 40px;
+        width: 100%;
+        font-size: 20px;
+        font-family: serif;
+        color: #0c0c0c;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        Body Mass Index(BMI) Calculator
+      </div>
+      <div class="mainContent">
+        <form class="" action="#" method="post" onsubmit="return false">
+          <label for="weight">Weight</label><br>
+          <input type="text" name="weight" id="weight" placeholder="weight in kg" required><br>
+          <label for="height">Height</label><br>
+          <input type="text" name="height" id="height" placeholder="height in ft.in " required><br>
+          <label for="bmiIndex">BMI Index</label><br>
+          <input type="text" name="bmiIndex" id="bmiIndex"><br>
+          <input type="submit"  value="Check BMI"  onclick="getBmiValue()">
+        </form>
+      </div>
+      <div class="footer">
+        A Healthy BMI Ranges Between 19 And 25
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function getBmiValue(){
+        var weight = document.getElementById('weight').value;
+        var height = document.getElementById('height').value;
+        height = height*12;  //converted into inch
+        height = height*0.025; //converted into meter
+
+        var bmiIndex = weight/(height*height);
+        bmiIndex = Math.round(bmiIndex);
+        document.getElementById("bmiIndex").value = bmiIndex;
+      }
+    </script>
+  </body>
+</html>
