@@ -343,4 +343,23 @@ body{
     margin: 10 auto;
   }
 
+  .slide-container .slide .caption{
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    border-top-left-radius: 50px;
+    border-top-right-radius:  50px;
+    font-weight: bold;
+    animation: cap .4s linear;
+  }
+
+
 }
