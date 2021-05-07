@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Divya's Personal Portfolio</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--circle of skills-->
+    <link rel="stylesheet" href="css/circle.css">
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/9f7b3c3869.js" crossorigin="anonymous"></script>
+
+    <!-- flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <style media="screen">
+      .carousel-cell {
+          width: 80%;
+      }
+
+       /* cell number */
+      .carousel-cell:before {
+        display: block;
+      }
+
+      .carousel-cell img{
+        height : 500px;
+        width : 700px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <!-- header section starts -->
+    <header>
+        <div class="user">
+            <img src="images/myPicture.png" alt="img">
+            <h3 class="name">Divya Basatwar</h3>
+            <p class="post">Information Technology Student</p>
+        </div>
+
+        <nav class="navBar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#certifications">certifications</a></li>
+                <li><a href="#projects">projects</a></li>
+                <!-- <li><a href="#contact">contact</a></li> -->
+            </ul>
+        </nav>
+
+    </header>
+    <!-- header section ends-->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <h3>HI THERE !</h3>
+        <h1>I'M <span>Divya Basatwar</span></h1>
+        <p>I am a student currently persuing my B.Tech. Degree From SGGS Institute of Engineering And Technology, Nanded In The Field Of Information Technology.</p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> me </h1>
+
+    <div class="row">
+
+        <div class="info">
+            <h3> <span> full name : </span> Divya Shivajirao Basatwar </h3>
+            <h3> <span> age : </span> 20 </h3>
+            <h3> <span> qualification : </span> B.Tech. </h3>
+            <h3> <span> post : </span> student </h3>
+            <h3> <span> language : </span> marathi, hindi, english </h3>
+            <h3> <span> hobbies : </span> listening music </h3>
+            <h3> <span> github profile : </span> https://github.com/DivyaBasatwar/ </h3>
+            <h3> <span> linkedIn Profile : </span> https://www.linkedin.com/in/divya-basatwar-95196217a/ </h3>
+            <h3> <span> hackerrank profile : </span> https://www.hackerrank.com/divyabasatwar02 </h3>
+            <a href="images/resume/DivyaBasatwar_Resume.pdf"><button class="btn"> Download Resume <i class="fas fa-download"></i> </button></a>
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+    <h1 class="heading"> my <span>education</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2011-2016</span>
+            <h3>5th std - 10th std, State Board Of Maharashtra</h3>
+            <p>Shri Shivaji Highschool, Nanded.</p>
+            <p><b>Percentage of 10th - 94%</b></p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2016-2018</span>
+            <h3>11th std - 12th std, State Board Of Maharashtra</h3>
+            <p>Shri Shivaji Jr. College, Nanded.</p>
+            <p><b>Percentage of 12th - 88%</b></p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2018-2022</span>
+            <h3>Graduation B.Tech. I.T.</h3>
+            <p>Shri Guru Gobind Singhji Institute Of Engineering And Technology, Nanded.</p>
+            <p><b>CGPA - 8.52/10</b></p>
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+
+
+
+    <!-- Skills Starts -->
+    <section class="skills" id="skills">
+      <h1 class="heading">my <span>skills</span> </h1>
+
+      <div class="skills-box">
+
+
+        <p style="font-size:20px;color:white;">C</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">C++</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">Java</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">Python</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">HTML</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">CSS</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">JavaScript</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">MySQL</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">PHP</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">Django Web Frameworks</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <p style="font-size:20px;color:white;">Cloud Computing With AWS</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+      </div>
+
+
+
+    </section>
+    <!-- Skills Ends -->
+
+
+    <!-- certifications section starts  -->
+
+    <section class="certifications" id="certifications">
+          <h1 class="heading"> my <span>certification's</span> </h1>
+
+          <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                  <img src="images/internshala/aws_internshala.png" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/internshala/web_internshala.png" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/internshala/web_excellence_internshala.png" class="img-fluid">
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="images/tcsIon.png" class="img-fluid">
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="images/eudonix.jpg" class="img-fluid">
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="images/coursera/aws_coursera.png" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/coursera/cloudComputing_coursera.png" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/coursera/html_css_javascript_coursera.png" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/coursera/java_coursera.png" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/coursera/python_coursera.png" class="img-fluid">
+                </div>
+
+
+                <div class="carousel-cell">
+                  <img src="images/sololearn/C_certificate.jpg" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/sololearn/CPlusPlus_certificate.jpg" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/sololearn/Java_certificate.jpg" class="img-fluid">
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="images/sololearn/HTML_certificate.jpg" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/sololearn/CSS_certificate.jpg" class="img-fluid">
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/sololearn/JavaScript_certificate.jpg" class="img-fluid">
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="images/sololearn/SQL_certificate.jpg" class="img-fluid">
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="images/react_greatLearning.png" class="img-fluid">
+                </div>
+
+
+          </div>
+
+    </section>
+
+    <!-- certifications section ends -->
+
+
+
+
+    <!-- Projects Section starts -->
+    <section class="projects" id="projects">
+      <h1 class="heading"> my <span>projects's</span> </h1>
+      <div class="box-container">
+          <div class="box">
+              <a href="https://covid19livedatabydsb.herokuapp.com/"><img src="images/projects/covidData.png" alt="" title="Covid-19 Live Data World Wide"></a>
+          </div>
+
+          <div class="box">
+              <a href="https://divyabasatwar.github.io/funPoint/"><img src="images/projects/funPoint.png" alt="" title="Fun Point"></a>
+          </div>
+
+          <div class="box">
+              <a href="https://divyabasatwar.github.io/GymWebsite/"><img src="images/projects/gym.jpg" alt="Gym Website"></a>
+          </div>
+
+          <div class="box">
+              <a href="https://divyabasatwar.github.io/ImageFilter/" target="_blank"><img src="images/projects/imageFilter.png" alt="" title="Image Filter"></a>
+          </div>
+
+          <div class="box">
+              <a href="https://mac-by-dsb.herokuapp.com/"><img src="images/projects/mac.jpg" alt="" title="E-Commerce Website"></a>
+          </div>
+
+          <div class="box">
+              <a href="https://divyabasatwar.github.io/Avadh%20Reality%20Pvt.%20Ltd/"><img src="images/projects/realEstate.jpg" alt="" title="Real Estate Website"></a>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section ends -->
+
+
+    <!-- Internships section starts -->
+    <section class="internships" id="internships">
+      <h1 class="heading"> <span>Internships</span> by me </h1>
+      <div class="col-sm-10">
+          <img src="images/sparksFoundation.png" alt="" style="margin-left:20%; height:80%; width:80%;">
+      </div>
+    </section>
+
+    <!-- Internships section ends -->
+
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> me </h1>
+
+    <div class="row">
+
+        <div class="content">
+
+            <h3 class="title">contact info</h3>
+
+            <div class="info">
+                <h3> <i class="fas fa-envelope"></i> divyabasatwar02@gmail.com </h3>
+                <h3> <i class="fas fa-phone"></i> +937-036-3851 </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> nanded, india - 431605. </h3>
+                <h3><u>Find Me Here</u></h3>
+                <a href="mailto:divyabasatwar02@gmail.com">
+                  <span style="font-size: 30px; color: yellow;">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </a>
+
+                <a href="tel:+91 9370363851">
+                  <span style="font-size: 30px; color: yellow;">
+                      <i class="fas fa-phone"></i>
+                  </span>
+                </a>
+
+                <a href="tel:+919370363851">
+                  <span style="font-size: 30px; color: yellow;">
+                      <i class="fab fa-whatsapp"></i>
+                  </span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/divya-basatwar-95196217a/">
+                  <span style="font-size: 30px; color: yellow;">
+                      <i class="fab fa-linkedin-in"></i>
+                  </span>
+                </a>
+
+                <a href="https://github.com/DivyaBasatwar/">
+                  <span style="font-size: 30px; color: yellow;">
+                      <i class="fab fa-github"></i>
+                  </span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <form action="">
+
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="text" placeholder="subject" class="box">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+            <button type="submit" class="btn" id="contactBtn" onclick="myFunction()"> send <i class="fas fa-paper-plane"></i> </button>
+
+        </form>
+
+    </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+
+
+    <!-- scroll top button  -->
+
+    <a href="#home" class="top">
+        <span style="font-size: 50px; color: yellow;">
+            <i class="fas fa-arrow-up"></i>
+        </span>
+    </a>
+
+
+
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <!--flickity JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      function myFunction(){
+        alert("Right now message sending functionality isn't working...You Can try some other way to contact me!");
+      }
+    </script>
+
+  </body>
+</html>
